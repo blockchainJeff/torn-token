@@ -37,7 +37,7 @@ library ECDSA {
     uint8 v;
 
     // ecrecover takes the signature parameters, and the only way to get them
-    // currently is to use assembly.
+    // currently is to use assembly.nice
     // solhint-disable-next-line no-inline-assembly
     assembly {
       r := mload(add(signature, 0x20))
